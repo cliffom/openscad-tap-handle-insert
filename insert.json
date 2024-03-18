@@ -38,6 +38,15 @@
             "magnetTolerance": "0.5",
             "rectLength": "100",
             "rectWidth": "50"
+        },
+        "Workbench Sign": {
+            "cornerRadius": "5",
+            "magnetCorners": "true",
+            "magnetDiameter": "10",
+            "magnetHeight": "1",
+            "magnetTolerance": "0.5",
+            "rectLength": "180",
+            "rectWidth": "60"
         }
     },
     "fileFormatVersion": "1"
