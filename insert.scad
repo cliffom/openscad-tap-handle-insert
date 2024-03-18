@@ -82,6 +82,8 @@ module magnetHole(x, y, diameter, height, tolerance, zOffset)
 	}
 }
 
+function getPosition(position, dimension, diameter) = position * (dimension / 2 - diameter);
+
 // Combine the shapes and extrude
 difference()
 {
@@ -96,8 +98,8 @@ difference()
 		// Create a hole in each of the four corners
 		for (x = [ -1, 1 ], y = [ -1, 1 ])
 		{
-			xPos = (rectWidth - cornerRadius * 2) / 2 * x;
-			yPos = (rectLength - cornerRadius * 2) / 2 * y;
+			xPos = getPosition(x, rectWidth, magnetDiameter);
+			yPos = getPosition(y, rectLength, magnetDiameter);
 			magnetHole(xPos, yPos, magnetDiameter, magnetHeight, magnetTolerance, magnetOffset);
 		}
 	}
