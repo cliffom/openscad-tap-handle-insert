@@ -1,33 +1,33 @@
-/* [Rectangle Parameters:] */
-
-// Length of the rectangle
-rectLength = 108;
-
-// Width of the rectangle
-rectWidth = 45;
-
-// Height of the rectangle
-rectHeight = 1;
-
-// Corner radius
-cornerRadius = 5;
-
 /* [Magnet Parameters:] */
 
 // Magnet height
-magnetHeight = 1;
+magnetHeight = 3;
 
 // Magnet diameter
-magnetDiameter = 10;
-
-// Magnet location along the z-axis
-magnetOffset = (rectHeight - magnetHeight) / 2;
+magnetDiameter = 8;
 
 // Tolerance of hole for magnet
 magnetTolerance = 0.5;
 
 // Put magnets in corners
 magnetCorners = true;
+
+/* [Rectangle Parameters:] */
+
+// Length of the rectangle
+rectLength = 100;
+
+// Width of the rectangle
+rectWidth = 50;
+
+// Corner radius
+cornerRadius = 5;
+
+// Height of the rectangle
+rectHeight = magnetHeight + 2;
+
+// Magnet location along the z-axis
+magnetOffset = (rectHeight - magnetHeight) / 2;
 
 // Defines a 2D rounded rectangle centered at the origin.
 //
