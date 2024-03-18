@@ -1,0 +1,23 @@
+{
+    "parameterSets": {
+        "10x1mm Magnet Jig": {
+            "cornerRadius": "5",
+            "magnetDiameter": "10",
+            "magnetHeight": "1",
+            "magnetTolerance": "0.2",
+            "rectHeight": "1",
+            "rectLength": "108",
+            "rectWidth": "45"
+        },
+        "8x3mm Magnet Jig": {
+            "cornerRadius": "5",
+            "magnetDiameter": "8",
+            "magnetHeight": "3",
+            "magnetTolerance": "0.5",
+            "rectHeight": "3",
+            "rectLength": "108",
+            "rectWidth": "45"
+        }
+    },
+    "fileFormatVersion": "1"
+}
