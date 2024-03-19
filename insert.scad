@@ -21,10 +21,13 @@ rectLength = 100;
 rectWidth = 50;
 
 // Corner radius
-cornerRadius = 5;
+cornerRadius = 5; // [0:5]
+
+// Padding of height to hide magnets
+rectHeightPadding = 1; // [0:2]
 
 // Height of the rectangle
-rectHeight = magnetHeight + 2;
+rectHeight = magnetHeight + rectHeightPadding;
 
 // Magnet location along the z-axis
 magnetOffset = (rectHeight - magnetHeight) / 2;
