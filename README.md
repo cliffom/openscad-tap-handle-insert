@@ -19,7 +19,7 @@ Before you start, ensure you have the following:
 
 The script is highly customizable through a set of parameters at the beginning of the file:
 
-- `rectLength`, `rectWidth`, `rectHeight`: Define the dimensions of the object.
+- `rectLength`, `rectWidth`: Define the dimensions of the object.
 - `cornerRadius`: Adjust the radius of the corners.
 - `magnetHeight`, `magnetDiameter`: Specify the size of the magnets.
 - `magnetOffset`: Position of the magnet along the z-axis.
@@ -44,20 +44,6 @@ The script includes the following main modules:
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Please ensure to update tests as appropriate and adhere to the existing coding style.
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Your Name - [Your Email](mailto:your.email@example.com)
-
-Project Link: [https://github.com/yourusername/yourprojectname](https://github.com/yourusername/yourprojectname)
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
