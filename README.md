@@ -4,10 +4,11 @@ This project contains an OpenSCAD script for creating a customizable 3D printed 
 
 ## Features
 
-- **Customizable Dimensions**: Easily adjust the length, width, and height of the object.
-- **Rounded Corners**: Add a modern touch with rounded corners, customizable radius.
-- **Magnet Embedding**: Precisely positioned holes for embedding cylindrical magnets at the corners or the center, depending on your needs.
-- **Tolerance Settings**: Adjust the tolerance for magnet fitting according to your manufacturing process.
+- **Customizable Dimensions**: Easily adjust the length, width, and height of the object to fit your needs.
+- **Rounded Corners**: Add a modern touch with customizable rounded corners to enhance the aesthetics and safety of the object.
+- **Magnet Embedding**: Incorporate precisely positioned holes for embedding cylindrical magnets either at the corners of the object or centrally, according to your design requirements.
+- **Tolerance Settings**: Fine-tune the tolerance settings for magnet embedding to accommodate variations in manufacturing processes and ensure a snug fit for the magnets.
+- **Height Padding for Magnets**: Customize the padding above the magnets within the object to conceal them completely or adjust their protrusion.
 
 ## Prerequisites
 
@@ -17,33 +18,33 @@ Before you start, ensure you have the following:
 
 ## Configuration
 
-The script is highly customizable through a set of parameters at the beginning of the file:
+The script allows for extensive customization through a set of parameters at the beginning of the file:
 
-- `rectLength`, `rectWidth`: Define the dimensions of the object.
-- `cornerRadius`: Adjust the radius of the corners.
-- `magnetHeight`, `magnetDiameter`: Specify the size of the magnets.
-- `magnetOffset`: Position of the magnet along the z-axis.
-- `magnetTolerance`: Set the fitting tolerance for the magnets.
-- `magnetCorners`: Boolean to place magnets at the corners or at the center.
+- `rectLength`, `rectWidth`: Set the dimensions of the object's length and width.
+- `cornerRadius`: Define the radius of the corners for a smoother appearance.
+- `magnetHeight`, `magnetDiameter`: Specify the dimensions of the magnets to be embedded.
+- `magnetTolerance`: Adjust the tolerance for the magnet holes to ensure a proper fit.
+- `magnetCorners`: A boolean parameter to determine whether the magnets are placed at the corners or centrally within the object.
+- `rectHeightPadding`: Set additional height above the magnets to fully encase them within the material.
 
 ## Usage
 
 1. Open the `.scad` file with OpenSCAD.
-2. Adjust the parameters at the beginning of the file to fit your needs.
-3. Render the model by pressing F5 or clicking on the 'Preview' button.
-4. When you're satisfied with the design, generate the STL by pressing F6 or clicking on the 'Render' button, then export it.
+2. Modify the parameters at the start of the file according to your design preferences.
+3. Preview the model by pressing F5 or clicking on the 'Preview' button.
+4. Once satisfied, render the final model by pressing F6 or selecting the 'Render' button, then export it as an STL file for 3D printing.
 
 ## Modules
 
-The script includes the following main modules:
+The script includes key modules such as:
 
-- `roundedRectangle(width, length, rounding)`: Creates a 2D rectangle with rounded corners.
-- `magnetHole(x, y, diameter, height, tolerance, zOffset)`: Generates a cylindrical hole for magnet embedding.
+- `roundedRectangle(width, length, rounding)`: This module creates a 2D rounded rectangle based on the specified dimensions and corner radius.
+- `magnetHole(x, y, diameter, height, tolerance, zOffset)`: This module generates a cylindrical hole designed for magnet embedding, customizable based on specified parameters.
 
 ## Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+We welcome contributions from the community. Your input helps make the open-source community an inspiring and creative space. Feel free to contribute in any way you can.
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This project is distributed under the MIT License. See the `LICENSE` file for more details.
